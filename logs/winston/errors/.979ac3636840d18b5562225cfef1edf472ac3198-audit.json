@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\.979ac3636840d18b5562225cfef1edf472ac3198-audit.json",
+    "files": [
+        {
+            "date": 1685948014847,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-05-06-12-error.log",
+            "hash": "ec17cd8fa1d658e60b0ad4d4d3c5b0b841a660f8ae95742efd6b3e564ba691f2"
+        },
+        {
+            "date": 1685957861869,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-05-06-15-error.log",
+            "hash": "46bb7d59fdcfdf12ef832cc6c32a10f45d3b2cd5c053c9c8cd30e05c8436df32"
+        },
+        {
+            "date": 1685985681219,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-05-06-23-error.log",
+            "hash": "4a61249d650628678d3c7d97f09d6192133077a97626622674b42e20eba663cf"
+        }
+    ],
+    "hashType": "sha256"
+}
