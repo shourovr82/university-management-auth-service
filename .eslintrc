@@ -7,13 +7,13 @@
   },
   "plugins": ["@typescript-eslint"],
   // HERE
-   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "rules": {
     "no-unused-vars": "warn",
     // "no-console":"error",
-    "no-undefined":"error",
-     "no-unused-expressions": ["warn", { "allowShortCircuit": true, "allowTernary": true }],
-    "no-unreachable":"error",
+    "no-undefined": "warn",
+    "no-unused-expressions": ["warn", { "allowShortCircuit": true, "allowTernary": true }],
+    "no-unreachable": "error",
     "@typescript-eslint/consistent-type-definitions": ["error", "type"]
   },
 
