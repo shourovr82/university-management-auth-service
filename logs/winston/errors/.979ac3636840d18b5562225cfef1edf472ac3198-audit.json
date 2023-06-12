@@ -59,6 +59,11 @@
             "date": 1686587689397,
             "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-12-06-22-error.log",
             "hash": "9140948650b3cc1bba678dd2a7cadca6708c2297f59eac7d15edf2228572bfbd"
+        },
+        {
+            "date": 1686589517510,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-12-06-23-error.log",
+            "hash": "3a7f5d54022202fc0254e5d12253aafaeb022cc62c6ca32052d79c20e8205efb"
         }
     ],
     "hashType": "sha256"
