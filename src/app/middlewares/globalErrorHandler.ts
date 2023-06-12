@@ -1,18 +1,30 @@
-import { NextFunction, Request, Response } from 'express';
+import { ErrorRequestHandler } from 'express';
 
 import { IGenericErrorMessage } from '../../interfaces/error';
 import config from '../../config';
 import handleValidationError from '../../errors/handleValidationError';
 import ApiError from '../../errors/ApiError';
+import { errorLogger } from '../../shared/logger';
+import { ZodError } from 'zod';
+import handleZodError from '../../errors/handleZodError';
 
 // global error handler
-const globalErrorHandler = (error: any, req: Request, res: Response, next: NextFunction) => {
+const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
+  config.env === 'development'
+    ? console.log('🚀 GlobalErrorHandler ~~~', error)
+    : errorLogger.error('🚀 GlobalErrorHandler ~~~', error);
+
   let statusCode = 500;
   let message = 'Something went wrong !';
   let errorMessages: IGenericErrorMessage[] = [];
 
   if (error?.name === 'ValidationError') {
     const simplifiedError = handleValidationError(error);
+    statusCode = simplifiedError.statusCode;
+    message = simplifiedError.message;
+    errorMessages = simplifiedError.errorMessages;
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZodError(error);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
     errorMessages = simplifiedError.errorMessages;

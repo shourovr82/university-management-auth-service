@@ -1,8 +1,8 @@
-import express, { Application, NextFunction, Request, Response, request, response } from 'express';
+import express, { Application } from 'express';
 import cors from 'cors';
-import usersRouter from './app/modules/users/users.routes';
-import ApiError from './errors/ApiError';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
+import { UserRoutes } from './app/modules/user/user.routes';
+import { AcademicSemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
 
 const app: Application = express();
 app.use(cors());
@@ -11,15 +11,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Application routes
-// console.log(process.env);
 
-app.use('/api/v1/users', usersRouter);
-
-//  testing route
-// app.get('/', (req: Request, res: Response, next: NextFunction) => {
-//   // throw new ApiError(400, 'Orre error paisi');
-//   // next('Orree baba error khaisi');
-// });
+app.use('/api/v1/users', UserRoutes);
+app.use('/api/v1/academic-semesters', AcademicSemesterRoutes);
 
 // global error handler
 app.use(globalErrorHandler);

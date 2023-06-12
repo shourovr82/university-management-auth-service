@@ -1,6 +1,6 @@
 import path from 'path';
 import { createLogger, format, transports } from 'winston';
-import { getLogDateAndTime } from '../app/modules/users/users.utils';
+import { getLogDateAndTime } from '../app/modules/user/user.utils';
 const { combine, timestamp, label, printf, prettyPrint } = format;
 import DailyRotateFile from 'winston-daily-rotate-file';
 
