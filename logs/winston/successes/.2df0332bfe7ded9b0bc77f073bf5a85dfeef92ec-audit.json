@@ -64,6 +64,11 @@
             "date": 1686589517497,
             "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-12-06-23-success.log",
             "hash": "36598bae03bf257317f8be48bf74d721a1dd5c1b9714bf56acb3e34c1f0ff43a"
+        },
+        {
+            "date": 1686593023545,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-13-06-00-success.log",
+            "hash": "19a21adfdcefead120ce73f67a2b3e918984f89b79e7d28250b646cb32e5518d"
         }
     ],
     "hashType": "sha256"

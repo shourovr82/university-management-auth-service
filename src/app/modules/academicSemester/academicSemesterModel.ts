@@ -57,7 +57,3 @@ export const AcademicSemester = model<IAcademicSemester, AcademicSemesterModel>(
   'AcademicSemester',
   academicSemesterSchema
 );
-
-// handling same year and same semester issues
-
-//  Data  -> check -? same year && same semester
