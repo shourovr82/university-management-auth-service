@@ -1,5 +1,8 @@
 import { Schema, model } from 'mongoose';
-import { AcademicSemesterModel, IAcademicSemester } from './academicSemester.Interface';
+import {
+  AcademicSemesterModel,
+  IAcademicSemester,
+} from './academicSemester.Interface';
 import {
   academicSemesterCodes,
   academicSemesterMonths,
@@ -17,7 +20,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
       enum: academicSemesterTitles,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
@@ -48,7 +51,10 @@ academicSemesterSchema.pre('save', async function (next) {
     year: this.year,
   });
   if (isExist) {
-    throw new ApiError(httpStatus.CONFLICT, 'Academic Semester is already exist !!');
+    throw new ApiError(
+      httpStatus.CONFLICT,
+      'Academic Semester is already exist !!'
+    );
   }
   next();
 });
