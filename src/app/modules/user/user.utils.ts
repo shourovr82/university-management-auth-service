@@ -18,7 +18,9 @@ export const generateUserId = async () => {
 
 export const getLogDateAndTime = (dateString: string): string => {
   const originalFormat: string = dateString;
-  const modifiedFormat: string = originalFormat.replace('T', ' ').replace('Z', '');
+  const modifiedFormat: string = originalFormat
+    .replace('T', ' ')
+    .replace('Z', '');
   const datetimeObj: Date = new Date(modifiedFormat);
   const options: Intl.DateTimeFormatOptions = {
     year: 'numeric',
@@ -29,6 +31,9 @@ export const getLogDateAndTime = (dateString: string): string => {
     second: 'numeric',
   };
 
-  const formattedDatetime: string = datetimeObj.toLocaleString('en-US', options);
+  const formattedDatetime: string = datetimeObj.toLocaleString(
+    'en-US',
+    options
+  );
   return formattedDatetime;
 };
