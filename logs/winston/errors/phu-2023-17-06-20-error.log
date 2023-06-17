@@ -1,0 +1,9 @@
+June 17, 2023 at 2:42:00 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Unexpected token } in JSON at position 25
+June 17, 2023 at 2:52:39 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "custom",
+    "message": "Either both title and code should be provided or neither",
+    "path": []
+  }
+]
+June 17, 2023 at 2:55:30 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Invalid Semester Code

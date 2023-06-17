@@ -8,3 +8,4 @@ June 16, 2023 at 5:40:22 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast t
 June 16, 2023 at 5:40:46 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "648b31231525c54d2e40a9554234" (type string) at path "_id" for model "AcademicSemester"
 June 16, 2023 at 5:40:47 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "648b31231525c54d2e40a9554234" (type string) at path "_id" for model "AcademicSemester"
 June 16, 2023 at 5:40:48 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "648b31231525c54d2e40a9554234" (type string) at path "_id" for model "AcademicSemester"
+June 16, 2023 at 5:40:59 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "648b31231525c54d2e40a9554234" (type string) at path "_id" for model "AcademicSemester"
