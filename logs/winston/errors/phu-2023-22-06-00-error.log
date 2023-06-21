@@ -1,0 +1,48 @@
+June 21, 2023 at 6:51:52 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "AcademicFaculty"
+    ],
+    "message": "Academic Faculty is required! "
+  }
+]
+June 21, 2023 at 6:52:33 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "AcademicFaculty"
+    ],
+    "message": "Academic Faculty is required! "
+  }
+]
+June 21, 2023 at 6:52:34 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "AcademicFaculty"
+    ],
+    "message": "Academic Faculty is required! "
+  }
+]
+June 21, 2023 at 6:52:59 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "AcademicFaculty"
+    ],
+    "message": "Academic Faculty is required! "
+  }
+]
