@@ -6,7 +6,7 @@ const router = express.Router();
 
 // routes
 router.post(
-  '/',
+  '/create-faculty',
   validateRequest(AcademicFacultyValidation.createFacultyZodSchema),
   AcademicFacultyController.createFaculty
 );
@@ -18,5 +18,6 @@ router.patch(
   AcademicFacultyController.updateFaculty
 );
 router.delete('/:id', AcademicFacultyController.deleteFaculty);
+router.get('/', AcademicFacultyController.getAllFaculties);
 //
 export const AcademicFacultyRoutes = router;

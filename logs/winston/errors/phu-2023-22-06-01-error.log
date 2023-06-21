@@ -1,0 +1,2 @@
+June 21, 2023 at 7:03:25 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.academicdepartments index: title_1 dup key: { title: "Department of shafin" }
+June 21, 2023 at 7:03:27 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.academicdepartments index: title_1 dup key: { title: "Department of shafin" }
