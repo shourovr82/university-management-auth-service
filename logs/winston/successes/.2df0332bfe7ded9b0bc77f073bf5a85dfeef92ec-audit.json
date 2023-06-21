@@ -6,149 +6,24 @@
     "auditLog": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\.2df0332bfe7ded9b0bc77f073bf5a85dfeef92ec-audit.json",
     "files": [
         {
-            "date": 1685948014834,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-12-success.log",
-            "hash": "82f9fab9247da480b6fb81a9d17ba4554d4de363635505a16cd801870a53580f"
+            "date": 1687320850613,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-06-10-success.log",
+            "hash": "24343dd1b507f6562f0d5f037a71766602529006d69745909d6252104e9054b9"
         },
         {
-            "date": 1685957861858,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-15-success.log",
-            "hash": "d62aed8d43c2d7b2dfa71bc3e2bfe91c71c596084ee981aa22c4b0f25bf38943"
+            "date": 1687362921896,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-06-21-success.log",
+            "hash": "83b4b67e69990595746134e607b827a33bf9501506434f4edc98e601884ded54"
         },
         {
-            "date": 1685985681207,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-05-06-23-success.log",
-            "hash": "328d162c60689d13f84bcf492d91b5348356cadffe068cd498f9ca1dcc80bd10"
+            "date": 1687363237220,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-06-22-success.log",
+            "hash": "295177ed77085f11f8f983488a2f90c961f32c66754f60c044f62d834527724f"
         },
         {
-            "date": 1686042663476,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-06-06-15-success.log",
-            "hash": "526f4a33fd98e57503cd2a3a821e206e26e03dd361e457e58ae82e7c54eacbe8"
-        },
-        {
-            "date": 1686327337827,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-09-06-22-success.log",
-            "hash": "128bac5fb601a67a93cabcfdf93aff53c1e52d19fc82f15dfd1b4827040ce7bb"
-        },
-        {
-            "date": 1686412618350,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-10-06-21-success.log",
-            "hash": "1e837dd7e67a4f742c0daffba9920cad6925c97d45d0764e7b038dea60630797"
-        },
-        {
-            "date": 1686412864873,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-10-06-22-success.log",
-            "hash": "84c36c4fdf74d53d9d0b7714880f539645c39b54b077eb6986531706cd70069a"
-        },
-        {
-            "date": 1686468466187,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-11-06-13-success.log",
-            "hash": "20c59cc74bd56843aa4d1776210a1dd69960f49d925e14ed7222115cb77b3800"
-        },
-        {
-            "date": 1686506862572,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-12-06-00-success.log",
-            "hash": "f0f365c393090cae20fc45f6724b7ffb2dc5137ca8d0a718f6a5fb97b01fd9af"
-        },
-        {
-            "date": 1686550118167,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-12-06-12-success.log",
-            "hash": "3bbe161d7ae804f2c39656aa472f69ca0d8f7c21d39624774b7c8c890a99b16f"
-        },
-        {
-            "date": 1686587689385,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-12-06-22-success.log",
-            "hash": "52385c481db10d37ef05ec6ee721d1126ba408e044074d6e53328f2b3fec9c5b"
-        },
-        {
-            "date": 1686589517497,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-12-06-23-success.log",
-            "hash": "36598bae03bf257317f8be48bf74d721a1dd5c1b9714bf56acb3e34c1f0ff43a"
-        },
-        {
-            "date": 1686593023545,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-13-06-00-success.log",
-            "hash": "19a21adfdcefead120ce73f67a2b3e918984f89b79e7d28250b646cb32e5518d"
-        },
-        {
-            "date": 1686631471705,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-13-06-10-success.log",
-            "hash": "8aedf8944a5973937774d26bb755563982999662354032f65b7b994c62896509"
-        },
-        {
-            "date": 1686632400341,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-13-06-11-success.log",
-            "hash": "3d84c1dc57c53e8c323917bffb8474809add4d73fc5b6e06c4d478a08b0fee24"
-        },
-        {
-            "date": 1686649567675,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-13-06-15-success.log",
-            "hash": "a49c3385bf3024b067055b2dfca576a5d8db66cf62b0d2214e8e7cd087dc76aa"
-        },
-        {
-            "date": 1686730448596,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-14-06-14-success.log",
-            "hash": "54fd187b2749ff2fd6efef8435c4544e97a7405ffa8adb24d908163dd0fd32f1"
-        },
-        {
-            "date": 1686757764209,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-14-06-21-success.log",
-            "hash": "1a9ec2cf5998418bf36688f390d774ea42ef47dac68d8d780ba2a3cf391ec43b"
-        },
-        {
-            "date": 1686758422303,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-14-06-22-success.log",
-            "hash": "426b1121498172a494d898d363517632fdbf90977d922dd06d733f83796837ca"
-        },
-        {
-            "date": 1686829095646,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-15-06-17-success.log",
-            "hash": "14f3f076f2158b48b710fa3091061e27cc4a44a71a0c9cf12b4729dff32fd66d"
-        },
-        {
-            "date": 1686842410078,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-15-06-21-success.log",
-            "hash": "49b1c1b886c90c9b1b007c544482076d0054826a6c6cb6c5a37ed07a7e49112a"
-        },
-        {
-            "date": 1686845044057,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-15-06-22-success.log",
-            "hash": "9e56c5e61ef6764369c31c7d672c9c9e7def199635e1461f53482d9452b145e0"
-        },
-        {
-            "date": 1686848783254,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-15-06-23-success.log",
-            "hash": "915f6af48baf6b62fe93b7bdc1188620803cf6fe006f3fb03216b877c20ca8ac"
-        },
-        {
-            "date": 1686886491345,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-16-06-09-success.log",
-            "hash": "e1855dac134df287ae4770c41df3dfbef7295179b94bcaa503d5ffd9ddc73af1"
-        },
-        {
-            "date": 1686889370301,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-16-06-10-success.log",
-            "hash": "c7c1b4beec6983ac1f3e2ccb3f43160f13a33ef96a51b289868f0dc3d762e57d"
-        },
-        {
-            "date": 1686893334851,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-16-06-11-success.log",
-            "hash": "41ecaa04b6cccb7aa026b9d1fc18565bf9af37032490c11e2af45f99105167bb"
-        },
-        {
-            "date": 1686906297262,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-16-06-15-success.log",
-            "hash": "7687e91b43d8303712e7c9d78b7c445ecaf5d22cdc168a2f389e1bdc51446a6e"
-        },
-        {
-            "date": 1686932727837,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-16-06-22-success.log",
-            "hash": "fe8932e39383e85815b6b5a989cece9d9a3cd5ba0037b99f06b3bbad6e468a24"
-        },
-        {
-            "date": 1687011740723,
-            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-17-06-20-success.log",
-            "hash": "d0542b1fe26e2da37007646d2eea35a8faa220e3455525592085fd90e8aa4a0c"
+            "date": 1687366807594,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\successes\\phu-2023-21-06-23-success.log",
+            "hash": "b2574683769f0dc19cfcbb41e5762114fa9455734d7a7188460a9e9cc09cf8e1"
         }
     ],
     "hashType": "sha256"

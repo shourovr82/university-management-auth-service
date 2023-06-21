@@ -15,7 +15,6 @@ const createUser: RequestHandler = catchAsync(
       message: 'User Created Successfully',
       data: result,
     });
-    next();
   }
 );
 
