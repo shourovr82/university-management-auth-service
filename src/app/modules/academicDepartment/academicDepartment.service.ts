@@ -82,7 +82,7 @@ const getSingleDepartment = async (
   return result;
 };
 
-// update semester
+// update department
 const updateDepartment = async (
   id: string,
   payload: Partial<IAcademicDepartment>
@@ -95,7 +95,7 @@ const updateDepartment = async (
   return result;
 };
 
-// delete semester
+// delete department
 
 const deleteDepartment = async (
   id: string

@@ -1,0 +1,1 @@
+June 22, 2023 at 6:49:51 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.users index: id_1 dup key: { id: "250100002" }

@@ -1,0 +1,2 @@
+June 23, 2023 at 5:56:40 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "johndoe@example.com" }
+June 23, 2023 at 5:56:53 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.students index: contactNo_1 dup key: { contactNo: "1234567890" }
