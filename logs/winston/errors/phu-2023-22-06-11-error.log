@@ -1,0 +1,49 @@
+June 22, 2023 at 5:04:03 AM [REXROX!] error : lastUser is not defined
+June 22, 2023 at 5:15:14 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+June 22, 2023 at 5:15:21 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:15:23 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:15:29 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:15:32 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+June 22, 2023 at 5:15:37 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:16:56 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "role is required"
+  }
+]
+June 22, 2023 at 5:17:07 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:17:08 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:18:01 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:18:02 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:18:03 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ (0 , user_utils_1.generateUserId) is not a function
+June 22, 2023 at 5:20:13 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot set properties of undefined (setting 'id')
+June 22, 2023 at 5:21:03 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot set properties of undefined (setting 'id')
+June 22, 2023 at 5:21:13 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot set properties of undefined (setting 'id')

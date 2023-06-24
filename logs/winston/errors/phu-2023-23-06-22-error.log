@@ -1,0 +1,404 @@
+June 23, 2023 at 4:01:55 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.academicfaculties index: title_1 dup key: { title: "Faculty of Science and Engineering" }
+June 23, 2023 at 4:03:41 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Unexpected token } in JSON at position 1003
+June 23, 2023 at 4:04:00 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:06:29 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:07:33 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:07:34 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:07:50 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "string",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Expected object, received string"
+  }
+]
+June 23, 2023 at 4:08:10 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "string",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Expected object, received string"
+  }
+]
+June 23, 2023 at 4:08:25 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:09:05 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:09:29 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:09:38 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:10:23 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:10:32 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:11:05 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 23, 2023 at 4:11:13 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:11:36 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "name"
+    ],
+    "message": "Required"
+  },
+  {
+    "expected": "'male' | 'female'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "student",
+      "gender"
+    ],
+    "message": "Gender is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "dateOfBirth"
+    ],
+    "message": "Date of Birth is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "email"
+    ],
+    "message": "Email is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "contactNo"
+    ],
+    "message": "Contact number is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "emergencyContactNo"
+    ],
+    "message": "Emergency Contact number is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "presentAddress"
+    ],
+    "message": "Present Address is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "permanentAddress"
+    ],
+    "message": "Permanent Address is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicSemester"
+    ],
+    "message": "Academic Semester is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicFaculty"
+    ],
+    "message": "Academic Faculty is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "academicDepartment"
+    ],
+    "message": "Academic Department is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "guardian"
+    ],
+    "message": "Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "localGuardian"
+    ],
+    "message": "Required"
+  }
+]
+June 23, 2023 at 4:13:09 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "student",
+      "contactNo"
+    ],
+    "message": "Expected string, received number"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "student",
+      "emergencyContactNo"
+    ],
+    "message": "Expected string, received number"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "student",
+      "guardian",
+      "fatherContactNo"
+    ],
+    "message": "Expected string, received number"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "guardian",
+      "MotherContactNo"
+    ],
+    "message": "Mother Contact No is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "student",
+      "localGuardian",
+      "contactNo"
+    ],
+    "message": "Expected string, received number"
+  }
+]
+June 23, 2023 at 4:13:34 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "guardian",
+      "MotherContactNo"
+    ],
+    "message": "Mother Contact No is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "number",
+    "path": [
+      "body",
+      "student",
+      "localGuardian",
+      "contactNo"
+    ],
+    "message": "Expected string, received number"
+  }
+]
+June 23, 2023 at 4:13:41 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "student",
+      "guardian",
+      "MotherContactNo"
+    ],
+    "message": "Mother Contact No is Required"
+  }
+]
