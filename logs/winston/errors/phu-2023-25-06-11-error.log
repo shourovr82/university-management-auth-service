@@ -1,0 +1,37 @@
+June 25, 2023 at 5:07:41 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty"
+    ],
+    "message": "Required"
+  }
+]
+June 25, 2023 at 5:07:48 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "faculty",
+      "designation"
+    ],
+    "message": "Designation is Required"
+  }
+]
+June 25, 2023 at 5:08:03 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:08:30 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:08:53 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:08:54 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:08:55 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:08:55 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot read properties of undefined (reading 'academicSemester')
+June 25, 2023 at 5:10:48 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johnd3e@example.com" }
+June 25, 2023 at 5:25:26 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Unexpected token } in JSON at position 1003
+June 25, 2023 at 5:25:30 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Unexpected token } in JSON at position 1003
+June 25, 2023 at 5:27:10 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "F-00001" (type string) at path "_id" for model "Faculty"
+June 25, 2023 at 5:27:51 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "F-00001" (type string) at path "_id" for model "Faculty"
+June 25, 2023 at 5:42:23 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: university-management.faculties index: email_1 dup key: { email: "johnd313e@example.com" }

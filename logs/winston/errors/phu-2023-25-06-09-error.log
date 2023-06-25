@@ -25,3 +25,23 @@ June 25, 2023 at 3:11:01 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast t
 June 25, 2023 at 3:11:16 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Student Not found
 June 25, 2023 at 3:11:43 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Student Not found
 June 25, 2023 at 3:11:53 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Student Not found
+June 25, 2023 at 3:15:52 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "received": "AA",
+    "code": "invalid_enum_value",
+    "options": [
+      "A+",
+      "A-",
+      "B+",
+      "AB+",
+      "AB-",
+      "O+",
+      "O-"
+    ],
+    "path": [
+      "body",
+      "bloodGroup"
+    ],
+    "message": "Invalid enum value. Expected 'A+' | 'A-' | 'B+' | 'AB+' | 'AB-' | 'O+' | 'O-', received 'AA'"
+  }
+]

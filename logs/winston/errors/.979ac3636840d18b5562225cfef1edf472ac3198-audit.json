@@ -89,6 +89,16 @@
             "date": 1687662171654,
             "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-25-06-09-error.log",
             "hash": "6351ed9a893215f240b3be908f3e75a260cc24cc488b37b4f35a6a09dea5f27d"
+        },
+        {
+            "date": 1687665619225,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-25-06-10-error.log",
+            "hash": "d9da746b08226dcf1dab780c594b9ed93561f543b00f4d600543acb4d45fb405"
+        },
+        {
+            "date": 1687669347330,
+            "name": "C:\\Users\\SHAFIN\\Music\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-25-06-11-error.log",
+            "hash": "2e50aab7386413b6290c1a435fbea4d0e94d65652488da13d5d6f52f9cf368ec"
         }
     ],
     "hashType": "sha256"
