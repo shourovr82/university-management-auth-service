@@ -1,4 +1,5 @@
 /* eslint-disable no-undefined */
+import { ENUM_USER_ROLE } from '../../../enums/users';
 import { IAcademicSemester } from '../academicSemester/academicSemester.Interface';
 import { User } from './user.model';
 
@@ -26,7 +27,10 @@ export const getLogDateAndTime = (dateString: string): string => {
 
 //  student id
 export const findLastStudentId = async (): Promise<string | undefined> => {
-  const lastStudent = await User.findOne({ role: 'student' }, { id: 1, _id: 0 })
+  const lastStudent = await User.findOne(
+    { role: ENUM_USER_ROLE.STUDENT },
+    { id: 1, _id: 0 }
+  )
     .sort({
       createdAt: -1,
     })
@@ -51,7 +55,10 @@ export const generateStudentId = async (
 
 // generate faculty id
 export const findLastFacultyId = async (): Promise<string | undefined> => {
-  const lastFaculty = await User.findOne({ role: 'faculty' }, { id: 1, _id: 0 })
+  const lastFaculty = await User.findOne(
+    { role: ENUM_USER_ROLE.FACULTY },
+    { id: 1, _id: 0 }
+  )
     .sort({
       createdAt: -1,
     })
@@ -68,6 +75,34 @@ export const generateFacultyId = async (): Promise<string> => {
   let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
 
   incrementedId = `F-${incrementedId}`;
+
+  return incrementedId;
+};
+
+// generate admin id
+
+// find last admin id
+export const findLastAdminId = async (): Promise<string | undefined> => {
+  const lastAdminId = await User.findOne(
+    { role: ENUM_USER_ROLE.ADMIN },
+    { id: 1, _id: 0 }
+  )
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+
+  return lastAdminId?.id ? lastAdminId?.id.substring(2) : undefined;
+};
+// generate
+export const generateAdminId = async (): Promise<string> => {
+  const currentId =
+    (await findLastAdminId()) || (0).toString().padStart(5, '0');
+
+  // increment
+  let incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0');
+
+  incrementedId = `A-${incrementedId}`;
 
   return incrementedId;
 };

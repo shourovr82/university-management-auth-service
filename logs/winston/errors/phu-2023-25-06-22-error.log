@@ -1,0 +1,19 @@
+June 25, 2023 at 4:00:33 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 4:02:33 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: email_1 dup key: { email: "johnd3323434e@example.com" }
+June 25, 2023 at 4:04:53 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "admin",
+      "designation"
+    ],
+    "message": "Designation is Required"
+  }
+]
+June 25, 2023 at 4:05:08 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 4:06:07 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "create-management" (type string) at path "_id" for model "managementDepartment"
+June 25, 2023 at 4:07:29 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 4:21:58 PM [REXROX!] error : Failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.ikwqeh8.mongodb.net

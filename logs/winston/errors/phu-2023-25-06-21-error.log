@@ -1,0 +1,66 @@
+June 25, 2023 at 3:29:40 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "admin"
+    ],
+    "message": "Required"
+  }
+]
+June 25, 2023 at 3:29:46 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "admin",
+      "designation"
+    ],
+    "message": "Designation is Required"
+  },
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "admin",
+      "managementDepartment"
+    ],
+    "message": "Management Department is Required"
+  }
+]
+June 25, 2023 at 3:30:11 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "admin",
+      "managementDepartment"
+    ],
+    "message": "Management Department is Required"
+  }
+]
+June 25, 2023 at 3:30:45 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 3:31:40 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: email_1 dup key: { email: "johnd3e@example.com" }
+June 25, 2023 at 3:31:46 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: managementDepartment_1 dup key: { managementDepartment: ObjectId('649812e8ef0ab7bb2ad9420f') }
+June 25, 2023 at 3:32:00 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: managementDepartment_1 dup key: { managementDepartment: ObjectId('649812e8ef0ab7bb2ad9420f') }
+June 25, 2023 at 3:32:31 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 3:33:15 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `Admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 3:33:46 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 3:38:42 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: managementDepartment_1 dup key: { managementDepartment: ObjectId('649812e8ef0ab7bb2ad9420f') }
+June 25, 2023 at 3:42:17 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create user
+June 25, 2023 at 3:44:31 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create Admin
+June 25, 2023 at 3:46:58 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create Admin
+June 25, 2023 at 3:47:38 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create user
+June 25, 2023 at 3:49:16 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create user
+June 25, 2023 at 3:49:57 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ User validation failed: password: Path `password` is required., role: Path `role` is required., id: Path `id` is required.
+June 25, 2023 at 3:50:21 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Failed to create user
+June 25, 2023 at 3:51:04 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `admin` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 25, 2023 at 3:53:38 PM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.admins index: email_1 dup key: { email: "johnd3323434e@example.com" }

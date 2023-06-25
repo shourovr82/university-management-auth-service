@@ -26,4 +26,4 @@ const ManagementDepartmentSchema = new Schema<
 export const ManagementDepartment = model<
   IManagementDepartment,
   ManagementDepartmentModel
->('ManagementDepartment', ManagementDepartmentSchema);
+>('managementDepartment', ManagementDepartmentSchema);
