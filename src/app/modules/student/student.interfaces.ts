@@ -5,8 +5,8 @@ import { IAcademicSemester } from '../academicSemester/academicSemester.Interfac
 
 export type UserName = {
   firstName: string;
-  lastName: string;
   middleName: string;
+  lastName: string;
 };
 
 export type Guardian = {
@@ -28,7 +28,7 @@ export type LocalGuardian = {
 
 export type IStudent = {
   id: string;
-  name: UserName;
+  name: UserName; // embedded object
   gender: 'male' | 'female';
   dateOfBirth: string;
   email: string;
@@ -37,11 +37,11 @@ export type IStudent = {
   bloodGroup?: ['A+', 'A-', 'B+', 'AB+', 'AB-', 'O+', 'O-'];
   presentAddress: string;
   permanentAddress: string;
-  guardian: Guardian;
-  localGuardian: LocalGuardian;
-  academicFaculty: Types.ObjectId | IAcademicFaculty;
-  academicDepartment: Types.ObjectId | IAcademicDepartment;
-  academicSemester: Types.ObjectId | IAcademicSemester;
+  guardian: Guardian; // embedded object
+  localGuardian: LocalGuardian; // embedded object
+  academicFaculty: Types.ObjectId | IAcademicFaculty; // reference id
+  academicDepartment: Types.ObjectId | IAcademicDepartment; // reference id
+  academicSemester: Types.ObjectId | IAcademicSemester; // reference id
   profileImage?: string;
 };
 

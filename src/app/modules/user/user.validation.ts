@@ -1,7 +1,9 @@
 import { z } from 'zod';
 import { bloodGroup, gender } from '../student/student.constants';
+import { facultyBloodGroup, facultyGender } from '../faculty/faculty.constants';
 
-const createUserZodSchema = z.object({
+// create student
+const createStudentZodSchema = z.object({
   body: z.object({
     password: z.string().optional(),
     student: z.object({
@@ -98,8 +100,65 @@ const createUserZodSchema = z.object({
   }),
 });
 
+// create faculty
+const createFacultyZodSchema = z.object({
+  body: z.object({
+    password: z.string().optional(),
+    faculty: z.object({
+      name: z.object({
+        firstName: z.string({
+          required_error: 'First Name is Required',
+        }),
+        middleName: z.string().optional(),
+        lastName: z.string({
+          required_error: 'Last Name is Required',
+        }),
+      }),
+      gender: z.enum([...facultyGender] as [string, ...string[]], {
+        required_error: 'Gender is Required',
+      }),
+      dateOfBirth: z.string({
+        required_error: 'Date of Birth is Required',
+      }),
+      email: z
+        .string({
+          required_error: 'Email is Required',
+        })
+        .email(),
+      bloodGroup: z
+        .enum([...facultyBloodGroup] as [string, ...string[]], {
+          required_error: 'Blood Group is Required',
+        })
+        .optional(),
+      contactNo: z.string({
+        required_error: 'Contact number is Required',
+      }),
+      emergencyContactNo: z.string({
+        required_error: 'Emergency Contact number is Required',
+      }),
+      presentAddress: z.string({
+        required_error: 'Present Address is Required',
+      }),
+      permanentAddress: z.string({
+        required_error: 'Permanent Address is Required',
+      }),
+      designation: z.string({
+        required_error: 'Designation is Required',
+      }),
+      academicDepartment: z.string({
+        required_error: 'Academic Department is Required',
+      }),
+      academicFaculty: z.string({
+        required_error: 'Academic Faculty is Required',
+      }),
+      profileImage: z.string().optional(),
+    }),
+  }),
+});
+
 // await createUserZodSchema.parseAsync(req);
 
 export const UserValidation = {
-  createUserZodSchema,
+  createStudentZodSchema,
+  createFacultyZodSchema,
 };
