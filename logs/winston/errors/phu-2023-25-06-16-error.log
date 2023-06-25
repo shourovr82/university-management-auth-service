@@ -1,0 +1,19 @@
+June 25, 2023 at 10:07:35 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "title"
+    ],
+    "message": "Management Title is Required"
+  }
+]
+June 25, 2023 at 10:09:45 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "649811fe27434a5ea683199353" (type string) at path "_id" for model "Management-Departments"
+June 25, 2023 at 10:09:52 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cast to ObjectId failed for value "asda" (type string) at path "_id" for model "Management-Departments"
+June 25, 2023 at 10:10:27 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Management Department Not found
+June 25, 2023 at 10:10:41 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Management Department Not found
+June 25, 2023 at 10:10:42 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Management Department Not found
+June 25, 2023 at 10:11:53 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.management-departments index: title_1 dup key: { title: "Shafinur Islam" }
+June 25, 2023 at 10:11:55 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ E11000 duplicate key error collection: university-management.management-departments index: title_1 dup key: { title: "Shafinur Islam" }
