@@ -6,7 +6,7 @@ import { ManagementDepartmentValidation } from './managementDepartment.validatio
 const router = express.Router();
 
 router.post(
-  '/create-department',
+  '/create-management',
   validateRequest(
     ManagementDepartmentValidation.createManagementDepartmentZodSchema
   ),

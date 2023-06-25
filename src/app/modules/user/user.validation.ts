@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { bloodGroup, gender } from '../student/student.constants';
 import { facultyBloodGroup, facultyGender } from '../faculty/faculty.constants';
+import { adminBloodGroup, adminGender } from '../admin/admin.constants';
 
 // create student
 const createStudentZodSchema = z.object({
@@ -156,9 +157,63 @@ const createFacultyZodSchema = z.object({
   }),
 });
 
+// create admin
+const createAdminZodSchema = z.object({
+  body: z.object({
+    password: z.string().optional(),
+    admin: z.object({
+      name: z.object({
+        firstName: z.string({
+          required_error: 'First Name is Required',
+        }),
+        middleName: z.string().optional(),
+        lastName: z.string({
+          required_error: 'Last Name is Required',
+        }),
+      }),
+      dateOfBirth: z.string({
+        required_error: 'Date of Birth is Required',
+      }),
+      gender: z.enum([...adminGender] as [string, ...string[]], {
+        required_error: 'Gender is Required',
+      }),
+      bloodGroup: z
+        .enum([...adminBloodGroup] as [string, ...string[]], {
+          required_error: 'Blood Group is Required',
+        })
+        .optional(),
+      email: z
+        .string({
+          required_error: 'Email is Required',
+        })
+        .email(),
+      contactNo: z.string({
+        required_error: 'Contact number is Required',
+      }),
+      emergencyContactNo: z.string({
+        required_error: 'Emergency Contact number is Required',
+      }),
+      presentAddress: z.string({
+        required_error: 'Present Address is Required',
+      }),
+      permanentAddress: z.string({
+        required_error: 'Permanent Address is Required',
+      }),
+      designation: z.string({
+        required_error: 'Designation is Required',
+      }),
+      managementDepartment: z.string({
+        required_error: 'Management Department is Required',
+      }),
+      profileImage: z.string().optional(),
+    }),
+  }),
+});
+
 // await createUserZodSchema.parseAsync(req);
 
 export const UserValidation = {
   createStudentZodSchema,
   createFacultyZodSchema,
+  createAdminZodSchema,
 };
