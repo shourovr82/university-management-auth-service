@@ -9,6 +9,7 @@ const router = express.Router();
 router.get('/', AdminController.getAllAdmins);
 
 router.get('/:id', AdminController.getSingleAdmin);
+router.delete('/:id', AdminController.deleteAdmin);
 
 router.patch(
   '/:id',

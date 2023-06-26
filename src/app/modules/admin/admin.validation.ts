@@ -4,11 +4,13 @@ import { bloodGroup, gender } from '../student/student.constants';
 //  update admin
 const updateAdminZodSchema = z.object({
   body: z.object({
-    name: z.object({
-      firstName: z.string().optional(),
-      middleName: z.string().optional(),
-      lastName: z.string().optional(),
-    }),
+    name: z
+      .object({
+        firstName: z.string().optional(),
+        middleName: z.string().optional(),
+        lastName: z.string().optional(),
+      })
+      .optional(),
     dateOfBirth: z.string().optional(),
     email: z.string().email().optional(),
     contactNo: z.string().optional(),

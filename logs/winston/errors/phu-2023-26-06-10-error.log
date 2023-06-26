@@ -1,0 +1,46 @@
+June 26, 2023 at 4:37:05 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ Cannot populate path `academicDepartment` because it is not in your schema. Set the `strictPopulate` option to false to override.
+June 26, 2023 at 4:39:43 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "code": "invalid_type",
+    "expected": "object",
+    "received": "undefined",
+    "path": [
+      "body",
+      "name"
+    ],
+    "message": "Required"
+  }
+]
+June 26, 2023 at 4:41:22 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "validation": "email",
+    "code": "invalid_string",
+    "message": "Invalid email",
+    "path": [
+      "body",
+      "email"
+    ]
+  }
+]
+June 26, 2023 at 4:41:25 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "validation": "email",
+    "code": "invalid_string",
+    "message": "Invalid email",
+    "path": [
+      "body",
+      "email"
+    ]
+  }
+]
+June 26, 2023 at 4:41:28 AM [REXROX!] error : 🚀 GlobalErrorHandler ~~~ [
+  {
+    "validation": "email",
+    "code": "invalid_string",
+    "message": "Invalid email",
+    "path": [
+      "body",
+      "email"
+    ]
+  }
+]

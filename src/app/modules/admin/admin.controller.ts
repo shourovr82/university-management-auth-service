@@ -4,25 +4,22 @@ import httpStatus from 'http-status';
 import sendResponse from '../../../shared/sendResponse';
 import pick from '../../../shared/pick';
 import { paginationFields } from '../../../constants/pagination';
-import { facultyFilterableFields } from './faculty.constants';
-import { IFaculty } from './faculty.interfaces';
-import { FacultyService } from './faculty.service';
+import { adminFilterableFields } from './admin.constants';
+import { AdminService } from './admin.service';
+import { IAdmin } from './admin.interfaces';
 
 // controller
 const getAllAdmins = catchAsync(async (req: Request, res: Response) => {
-  const filters = pick(req.query, facultyFilterableFields);
+  const filters = pick(req.query, adminFilterableFields);
   const paginationOptions = pick(req.query, paginationFields);
 
   //
-  const result = await FacultyService.getAllFaculties(
-    filters,
-    paginationOptions
-  );
+  const result = await AdminService.getAllAdmins(filters, paginationOptions);
 
-  sendResponse<IFaculty[]>(res, {
+  sendResponse<IAdmin[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Faculty retrieved successfully !',
+    message: 'Admins retrieved successfully !',
     meta: result.meta,
     data: result.data,
   });
@@ -34,18 +31,18 @@ const getSingleAdmin = catchAsync(
     const id = req.params.id;
 
     //
-    const result = await FacultyService.getSingleFaculty(id);
-    sendResponse<IFaculty>(res, {
+    const result = await AdminService.getSingleAdmin(id);
+    sendResponse<IAdmin>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Faculty retrieved successfully !',
+      message: 'Admin retrieved successfully !',
       data: result,
     });
     next();
   }
 );
 
-// update Faculty
+// update Admin
 const updateAdmin = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
   const updatedData = req?.body;
@@ -53,11 +50,11 @@ const updateAdmin = catchAsync(async (req: Request, res: Response) => {
   //
 
   //
-  const result = await FacultyService.updateFaculty(id, updatedData);
-  sendResponse<IFaculty>(res, {
+  const result = await AdminService.updateAdmin(id, updatedData);
+  sendResponse<IAdmin>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Faculty updated successfully !',
+    message: 'Admin updated successfully !',
     data: result,
   });
 });
@@ -66,11 +63,11 @@ const updateAdmin = catchAsync(async (req: Request, res: Response) => {
 const deleteAdmin = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
 
-  const result = await FacultyService.deleteFaculty(id);
-  sendResponse<IFaculty>(res, {
+  const result = await AdminService.deleteAdmin(id);
+  sendResponse<IAdmin>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Faculty deleted successfully !',
+    message: 'Admin deleted successfully !',
     data: result,
   });
 });
