@@ -17,6 +17,7 @@ import { Faculty } from '../faculty/faculty.model';
 import { IAdmin } from '../admin/admin.interfaces';
 import { ENUM_USER_ROLE } from '../../../enums/users';
 import { Admin } from '../admin/admin.model';
+import bcrypt from 'bcrypt';
 
 //  create student
 const createStudent = async (
@@ -27,6 +28,8 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_pass as string;
   }
+
+  //
   // set role
   user.role = ENUM_USER_ROLE.STUDENT;
   const academicSemester = await AcademicSemester.findById(
@@ -34,12 +37,10 @@ const createStudent = async (
   );
   let newUserAllData = null;
   const session = await mongoose.startSession();
-
   try {
     session.startTransaction();
     // generate student id
     const id = await generateStudentId(academicSemester);
-
     user.id = id;
 
     student.id = id;
@@ -96,7 +97,7 @@ const createFaculty = async (
 ): Promise<IUser | null> => {
   // default password
   if (!user.password) {
-    user.password = config.default_student_pass as string;
+    user.password = config.default_faculty_pass as string;
   }
   // set role
   user.role = ENUM_USER_ROLE.FACULTY;
@@ -162,7 +163,7 @@ const createAdmin = async (
 ): Promise<IUser | null> => {
   // default password
   if (!user.password) {
-    user.password = config.default_student_pass as string;
+    user.password = config.default_admin_pass as string;
   }
   // set role
   user.role = ENUM_USER_ROLE.ADMIN;
