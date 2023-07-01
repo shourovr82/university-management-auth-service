@@ -17,7 +17,6 @@ import { Faculty } from '../faculty/faculty.model';
 import { IAdmin } from '../admin/admin.interfaces';
 import { ENUM_USER_ROLE } from '../../../enums/users';
 import { Admin } from '../admin/admin.model';
-import bcrypt from 'bcrypt';
 
 //  create student
 const createStudent = async (

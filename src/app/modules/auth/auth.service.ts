@@ -1,10 +1,18 @@
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../user/user.model';
-import { ILoginUser } from './auth.interfaces';
+import {
+  ILoginUser,
+  ILoginUserResponse,
+  IRefreshTokenResponse,
+} from './auth.interfaces';
+import { Secret } from 'jsonwebtoken';
+import config from '../../../config';
+import { jwtHelpers } from '../../../helpers/jwtHelpers';
+import jwt from 'jsonwebtoken';
 
-// get single document -------------------- >
-const loginUser = async (payload: ILoginUser) => {
+// get single document --------------------
+const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   //
   const { id, password } = payload;
   // creating instance of  user exist or not
@@ -20,12 +28,68 @@ const loginUser = async (payload: ILoginUser) => {
   ) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Password is incorrect !!');
   }
+  const { id: userId, role, needsPasswordChange } = isUserExist;
+  // create access token & refresh token
+  const accessToken = jwtHelpers.createToken(
+    {
+      userId,
+      role,
+    },
+    config.jwt.secret as Secret,
+    config.jwt.expires_in as string
+  );
+  const refreshToken = jwtHelpers.createToken(
+    {
+      userId,
+      role,
+    },
+    config.jwt.refresh_secret as Secret,
+    config.jwt.refresh_expires_in as string
+  );
+  return {
+    accessToken,
+    refreshToken,
+    needsPasswordChange,
+  };
+};
 
-  // create access token
+// refreshToken
+const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
+  //  verify token
+  let verifiedToken = null;
+  try {
+    verifiedToken = jwtHelpers.verifyToken(
+      token,
+      config.jwt.refresh_secret as Secret
+    );
+  } catch (error) {
+    // err
+    throw new ApiError(httpStatus.FORBIDDEN, 'Invalid Refresh Token');
+  }
+  // if user not exist
+  // checking deleted user's refresh token
+  const { userId } = verifiedToken;
 
-  return {};
+  const isUserExist = await User.isUserExist(userId);
+  if (!isUserExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exists!!');
+  }
+
+  // generate new token
+  const newAccessToken = jwtHelpers.createToken(
+    {
+      id: isUserExist?.id,
+      role: isUserExist?.role,
+    },
+    config.jwt.secret as Secret,
+    config.jwt.expires_in as string
+  );
+  return {
+    accessToken: newAccessToken,
+  };
 };
 
 export const AuthService = {
   loginUser,
+  refreshToken,
 };

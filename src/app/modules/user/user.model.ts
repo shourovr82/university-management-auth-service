@@ -3,7 +3,6 @@ import { Schema, model } from 'mongoose';
 import { IUser, UserModel } from './user.interface';
 import bcrypt from 'bcrypt';
 import config from '../../../config';
-import { boolean } from 'zod';
 
 const UserSchema = new Schema<IUser, UserModel>(
   {
@@ -22,7 +21,7 @@ const UserSchema = new Schema<IUser, UserModel>(
       select: 0,
     },
     needsPasswordChange: {
-      type: boolean,
+      type: Boolean,
       default: true,
     },
     student: {
@@ -49,10 +48,13 @@ const UserSchema = new Schema<IUser, UserModel>(
 // user exist check
 UserSchema.statics.isUserExist = async function (
   id: string
-): Promise<Pick<IUser, 'id' | 'password' | 'needsPasswordChange'> | null> {
+): Promise<Pick<
+  IUser,
+  'id' | 'password' | 'role' | 'needsPasswordChange'
+> | null> {
   return await User.findOne(
     { id },
-    { id: 1, password: 1, needsPasswordChange: 1 }
+    { id: 1, password: 1, role: 1, needsPasswordChange: 1 }
   );
 };
 UserSchema.statics.isPasswordMatched = async function (
@@ -92,4 +94,4 @@ export const User = model<IUser, UserModel>('User', UserSchema);
 //   savedPassword: string
 // ): Promise<boolean> {
 //   return await bcrypt.compare(givenPassword, savedPassword);
-// };
+// };T extends { type: (params?: ({ errorMap?: ZodErrorMap | undefined; invalid_type_error?: string | undefined; required_error?: string | undefined; description?: string | undefined; } & { ...; }) | undefined) => ZodBoolean; default: boolean; }

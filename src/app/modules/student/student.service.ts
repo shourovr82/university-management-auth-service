@@ -8,6 +8,8 @@ import { IStudent, IStudentFilters } from './student.interfaces';
 import { studentSearchableFields } from './student.constants';
 import { Student } from './student.model';
 import httpStatus from 'http-status';
+import mongoose from 'mongoose';
+import { User } from '../user/user.model';
 
 // get all student service ------------------>
 
@@ -134,11 +136,31 @@ const updateStudent = async (
 // delete student
 
 const deleteStudent = async (id: string): Promise<IStudent | null> => {
-  const result = await Student.findByIdAndDelete(id)
-    .populate('academicSemester')
-    .populate('academicDepartment')
-    .populate('academicFaculty');
-  return result;
+  // check if the faculty is exist
+  const isExist = await Student.findOne({ id });
+
+  if (!isExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'Student not found !');
+  }
+
+  const session = await mongoose.startSession();
+
+  try {
+    session.startTransaction();
+    //delete student first
+    const student = await Student.findOneAndDelete({ id }, { session });
+    if (!student) {
+      throw new ApiError(404, 'Failed to delete student');
+    }
+    //delete user
+    await User.deleteOne({ id });
+    await session.commitTransaction();
+    session.endSession();
+    return student;
+  } catch (error) {
+    session.abortTransaction();
+    throw error;
+  }
 };
 // ------------------>
 
