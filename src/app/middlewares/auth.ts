@@ -4,8 +4,6 @@ import httpStatus from 'http-status';
 import { jwtHelpers } from '../../helpers/jwtHelpers';
 import config from '../../config';
 import { Secret } from 'jsonwebtoken';
-import { ENUM_USER_ROLE } from '../../enums/users';
-//
 
 const auth =
   (...requiredRoles: string[]) =>
